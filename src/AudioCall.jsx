@@ -11,7 +11,7 @@ const AudioCall = () => {
 
     useEffect(() => {
         // Initialize Socket.IO
-        socketRef.current = io.connect('http://localhost:2000');
+        socketRef.current = io.connect(`${import.meta.env.VITE_API}`);
 
         // Get audio stream
         navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
