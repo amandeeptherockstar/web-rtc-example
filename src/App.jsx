@@ -12,3 +12,5 @@ function App() {
 }
 
 export default App;
+
+// socketRef.current = io.connect(`${import.meta.env.VITE_API}`);
